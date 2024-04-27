@@ -29,4 +29,6 @@ To use Defenzio on your local machine, follow these simple steps:
 
 Feel free to explore Defenzio!
 
+You can find the dataset used for training and testing Defenzio [here](https://www.kaggle.com/datasets/cicdataset/cicids2017/code).
+
 **Stay secure with Defenzio!**
