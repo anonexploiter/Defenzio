@@ -86,22 +86,22 @@ def logout():
     return {"message": "Successfully logged out"}
 
 
-model =     pickle.load(open('D:/pl/Defenzio/ml_models/RandomForestmodel', 'rb'))
-botmodel = pickle.load(open('D:/pl/Defenzio/ml_models/bot_model.pkl', 'rb'))
-ddos_model = pickle.load(open('D:/pl/Defenzio/ml_models/ddos_model.pkl', 'rb'))
-ddoshulk_model = pickle.load(open('D:/pl/Defenzio/ml_models/ddoshulk_model.pkl', 'rb'))
-dos_goldeneye_model = pickle.load(open('D:/pl/Defenzio/ml_models/dos_goldeneye_model.pkl', 'rb'))
+model =     pickle.load(open('./ml_models/RandomForestmodel', 'rb'))
+botmodel = pickle.load(open('./ml_models/bot_model.pkl', 'rb'))
+ddos_model = pickle.load(open('./ml_models/ddos_model.pkl', 'rb'))
+ddoshulk_model = pickle.load(open('./ml_models/ddoshulk_model.pkl', 'rb'))
+dos_goldeneye_model = pickle.load(open('./ml_models/dos_goldeneye_model.pkl', 'rb'))
 dos_slowhttptest_model = pickle.load(
-    open('D:/pl/Defenzio/ml_models/dos_slowhttptest_model.pkl', 'rb'))
+    open('./ml_models/dos_slowhttptest_model.pkl', 'rb'))
 dos_slowloris_model = pickle.load(
-    open('D:/pl/Defenzio/ml_models/dos_slowloris_model.pkl', 'rb'))
-ftppatator_model = pickle.load(open('D:/pl/Defenzio/ml_models/FTP- PATATOR_model.pkl', 'rb'))
-infiltration_model = pickle.load(open('D:/pl/Defenzio/ml_models/infiltration_model.pkl', 'rb'))
-ssh_patator_model = pickle.load(open('D:/pl/Defenzio/ml_models/ssh_patator_model.pkl', 'rb'))
+    open('./ml_models/dos_slowloris_model.pkl', 'rb'))
+ftppatator_model = pickle.load(open('./ml_models/FTP- PATATOR_model.pkl', 'rb'))
+infiltration_model = pickle.load(open('./ml_models/infiltration_model.pkl', 'rb'))
+ssh_patator_model = pickle.load(open('./ml_models/ssh_patator_model.pkl', 'rb'))
 webattack_bruteforce_model = pickle.load(
-    open('D:/pl/Defenzio/ml_models/webattack_bruteforce_model.pkl', 'rb'))
+    open('./ml_models/webattack_bruteforce_model.pkl', 'rb'))
 webattack_sqlinjection_model = pickle.load(
-    open('D:/pl/Defenzio/ml_models/webattack_sqlinjection_model.pkl', 'rb'))
+    open('./ml_models/webattack_sqlinjection_model.pkl', 'rb'))
 
 known_attack_ml_models = {botmodel: "bot", ddos_model: "ddos", ddoshulk_model: "ddoshulk", dos_goldeneye_model: "ddosgoldeneye", dos_slowhttptest_model: "dosslowhttptest", dos_slowloris_model: "dosslowloris",
                        ftppatator_model: "ftppatator", infiltration_model: "infiltration", ssh_patator_model: "sshpatator", webattack_bruteforce_model: "webattackbruteforce", webattack_sqlinjection_model: "webattacksqlinjection"}
