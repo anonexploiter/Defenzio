@@ -1,0 +1,48 @@
+/* Nav.css */
+
+.navbar {
+  display: flex;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  width: auto;
+  height: 4.5em;
+  margin: 1.5em;
+  border-radius: 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: larger;
+}
+
+.navbar a:hover{
+  text-decoration: none;
+}
+
+.navbar-hidden {
+  display: none;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  margin-right: 1em;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-link {
+  margin-right: 1em;
+}
+
+@media (max-width: 991.98px) {
+  .navbar {
+      padding: 10px;
+  }
+}
